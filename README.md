@@ -32,7 +32,7 @@ Physical Datatypes are **primitive** datatypes supported by:
 
 - Programming Languages, eg. Java, PHP, Javascript, etc.
 - Database Systems (relational, object oriented, NoSQL, etc)
-- Serialization Data Formats, eg. JSON, XML, etc.
+- Data Exchange Formats, eg. JSON, XML, etc.
 
 List of Physical Datatypes:
 
@@ -54,8 +54,76 @@ Datatypes in programming languages:
 - PHP Types - http://www.php.net/manual/en/language.types.php
 - Javascript Datatypes - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures
 
-Datatypes in data formats:
+Datatypes in data exchange formats:
 - JSON Datatypes - http://en.wikipedia.org/wiki/JSON#Data_types.2C_syntax_and_example
+
+References:
+- Data types - http://en.wikipedia.org/wiki/Data_type
+
+
+Composite Datatype
+------------------
+
+Composite datatypes allow the construction of logical datatypes
+
+- Vector2<Primitive>: Can be used in ranges, vectors, etc.
+- Vector3<Primitive>: same as above
+
+
+Logical Datatype
+----------------
+
+Logical data types introduce semantics. They must define representations using primitive data types.
+
+Here's a list of some logical data types:
+
+### Color
+
+Representations:
+- String Datatype with hex "#RRGGBB" format
+- String Datatype with decimal "(R, G, B)" format
+
+### Date
+
+Representations:
+- String Datatype with "Y-m-d" format
+
+### Datetime
+
+Representations:
+- String Datatype with "Y-m-d H:i:s" format
+
+### Time
+
+Representations:
+- String Datatype with "H:i:s" format
+
+
+
+Collection
+----------
+
+The following collections are allowed:
+- List - ordered list of items
+- Set - unordered list of unique items
+- Map - lookup tables using strings as keys
+
+
+References:
+- http://en.wikipedia.org/wiki/Collection_(abstract_data_type)
+
+
+
+
+Validator
+---------
+
+A validator is applied against a primitive datatype to enforce semantics.
+
+Example validators:
+
+- MinValue: Works on Integer and Double datatype
+
 
 References
 ----------
